@@ -31,10 +31,17 @@ yarn install
 
 ### Linux
 
-Install [git](https://git-scm.com/), [node.js](https://nodejs.org/) (version 6 or greater), [yarn](https://yarnpkg.com/en/docs/install#linux-tab), [GNU Make](http://www.gnu.org/software/make/), and libglew-dev
+Install [git](https://git-scm.com/), [node.js](https://nodejs.org/) (version 6 or greater), [GNU Make](http://www.gnu.org/software/make/), and libglew-dev
 ```bash
 sudo apt-get update &&
-sudo apt-get install build-essential git nodejs yarn libglew-dev libxi-dev
+sudo apt-get install build-essential git nodejs libglew-dev libxi-dev
+```
+
+Install [yarn](https://yarnpkg.com/en/docs/install#linux-tab)
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 ```
 
 Clone the repository
